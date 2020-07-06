@@ -1,0 +1,5 @@
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\DAL\bin\Debug\DAL.dll
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\DAL\bin\Debug\DAL.pdb
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\DAL\obj\Debug\DAL.dll
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\DAL\obj\Debug\DAL.pdb
