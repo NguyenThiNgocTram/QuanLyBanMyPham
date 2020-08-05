@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QuanLyBanMyPham
@@ -16,7 +15,7 @@ namespace QuanLyBanMyPham
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangNhap_GUI());
+            Application.Run(new ManHinhChinh_GUI());
         }
     }
 }

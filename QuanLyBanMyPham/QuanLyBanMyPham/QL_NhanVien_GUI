@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace QuanLyBanMyPham
+{
+    public partial class ChucNangNhanVien_GUI : Form
+    {
+        public ChucNangNhanVien_GUI()
+        {
+            InitializeComponent();
+        }
+
+        private void ChucNangNhanVien_GUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bnThoat_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đã Thoát");
+
+        }
+    }
+}

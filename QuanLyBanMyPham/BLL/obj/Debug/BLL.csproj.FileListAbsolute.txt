@@ -1,9 +1,0 @@
-D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL\bin\Debug\BLL.dll
-D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL\bin\Debug\BLL.pdb
-D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
-D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL\obj\Debug\BLL.dll
-D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL\obj\Debug\BLL.pdb
-D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL\bin\Debug\DAL.dll
-D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL\bin\Debug\DAL.pdb
-D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL\obj\Debug\BLL.csproj.CopyComplete

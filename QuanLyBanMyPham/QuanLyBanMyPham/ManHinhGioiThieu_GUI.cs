@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace QuanLyBanMyPham
 {
-    public partial class DangNhap_GUI : Form
+    public partial class ManHinhGioiThieu_GUI : Form
     {
-        public DangNhap_GUI()
+        public ManHinhGioiThieu_GUI()
         {
             InitializeComponent();
+        }
+
+        private void ManHinhGioiThieu_GUI_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

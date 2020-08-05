@@ -1,0 +1,15 @@
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\bin\Debug\QuanLyBanMyPham.exe
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\bin\Debug\QuanLyBanMyPham.pdb
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\bin\Debug\BLL_DAL.dll
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\bin\Debug\BLL_DAL.pdb
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.Properties.Resources.resources
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.csproj.GenerateResource.cache
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.csproj.CoreCompileInputs.cache
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.csproj.CopyComplete
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.exe
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.pdb
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.DangNhap_GUI.resources
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.ChucNangNhanVien_GUI.resources
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.ManHinhChinh_GUI.resources
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.ManHinhGioiThieu_GUI.resources
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.csprojAssemblyReference.cache
