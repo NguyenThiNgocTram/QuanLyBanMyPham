@@ -3,3 +3,5 @@ D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL_DAL\bin\Debug\BLL_DAL.pdb
 D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL_DAL\obj\Debug\BLL_DAL.csproj.CoreCompileInputs.cache
 D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL_DAL\obj\Debug\BLL_DAL.dll
 D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL_DAL\obj\Debug\BLL_DAL.pdb
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL_DAL\bin\Debug\BLL_DAL.dll.config
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\BLL_DAL\obj\Debug\BLL_DAL.csprojAssemblyReference.cache

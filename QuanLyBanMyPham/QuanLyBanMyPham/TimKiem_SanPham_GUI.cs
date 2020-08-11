@@ -9,16 +9,11 @@ using System.Windows.Forms;
 
 namespace QuanLyBanMyPham
 {
-    public partial class QL_HoaDon_GUI : Form
+    public partial class TimKiem_SanPham_GUI : Form
     {
-        public QL_HoaDon_GUI()
+        public TimKiem_SanPham_GUI()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
