@@ -19,3 +19,4 @@ D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyP
 D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.QL_NhanVien_GUI.resources
 D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.QL_SanPham_GUI.resources
 D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.TimKiem_SanPham_GUI.resources
+D:\PTCNPM\QuanLyBanMyPham\QuanLyBanMyPham\QuanLyBanMyPham\obj\Debug\QuanLyBanMyPham.EditNhanVien_GUI.resources

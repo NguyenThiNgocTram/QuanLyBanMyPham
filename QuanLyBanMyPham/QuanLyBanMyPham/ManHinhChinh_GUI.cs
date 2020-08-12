@@ -18,7 +18,16 @@ namespace QuanLyBanMyPham
 
         private void ManHinhChinh_GUI_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             this.IsMdiContainer = true;
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            QL_NhanVien_GUI qL= new QL_NhanVien_GUI();
+            qL.MdiParent = this;
+            qL.WindowState = FormWindowState.Maximized;
+            qL.Show();
         }
 
         //private void gioiThieuToolStripMenuItem_Click(object sender, EventArgs e)

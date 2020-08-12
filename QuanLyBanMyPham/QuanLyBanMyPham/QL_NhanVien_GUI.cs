@@ -20,7 +20,7 @@ namespace QuanLyBanMyPham
         }
         public void loadNhanVien()
         {
-            dataGridView1.DataSource = nhanvien.loadNhanVien();
+            dgvNhanVien.DataSource = nhanvien.loadNhanVien();
         }
         private void ChucNangNhanVien_GUI_Load(object sender, EventArgs e)
         {
@@ -32,5 +32,13 @@ namespace QuanLyBanMyPham
             MessageBox.Show("Đã Thoát");
 
         }
+
+
+        private void bnEdit_Click(object sender, EventArgs e)
+        {
+            EditNhanVien_GUI tnv = new EditNhanVien_GUI();
+            tnv.ShowDialog();
+        }
+
     }
 }
