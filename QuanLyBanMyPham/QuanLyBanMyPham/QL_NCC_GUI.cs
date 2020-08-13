@@ -9,17 +9,16 @@ using System.Windows.Forms;
 
 namespace QuanLyBanMyPham
 {
-    public partial class QL_SanPham_GUI : Form
+    public partial class QL_NCC_GUI : Form
     {
-        public QL_SanPham_GUI()
+        public QL_NCC_GUI()
         {
             InitializeComponent();
         }
 
-        private void bnEdit_Click(object sender, EventArgs e)
+        private void bnThoat_Click(object sender, EventArgs e)
         {
-            EditSanPham_GUI edit = new EditSanPham_GUI();
-            edit.ShowDialog();
+            this.Close();
         }
     }
 }

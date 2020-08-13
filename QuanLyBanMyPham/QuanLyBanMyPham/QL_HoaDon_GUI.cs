@@ -20,5 +20,21 @@ namespace QuanLyBanMyPham
         {
 
         }
+
+        private void QL_HoaDon_GUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bnEdit_Click(object sender, EventArgs e)
+        {
+            EditHoaDon_GUI edit = new EditHoaDon_GUI();
+            edit.ShowDialog();
+        }
+
+        private void bnCTHD_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

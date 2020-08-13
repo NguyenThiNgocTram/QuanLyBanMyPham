@@ -5,7 +5,9 @@ using System.Text;
 
 namespace BLL_DAL
 {
-    public class Class1
+    public class SanPham_GUI
     {
+
+       
     }
 }

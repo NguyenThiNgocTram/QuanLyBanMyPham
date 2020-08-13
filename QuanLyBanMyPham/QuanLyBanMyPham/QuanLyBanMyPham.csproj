@@ -52,11 +52,29 @@
     <Compile Include="ChiTietHoaDon_GUI.Designer.cs">
       <DependentUpon>ChiTietHoaDon_GUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditHoaDon_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditHoaDon_GUI.Designer.cs">
+      <DependentUpon>EditHoaDon_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSanPham_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSanPham_GUI.Designer.cs">
+      <DependentUpon>EditSanPham_GUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="QL_LuongNV_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QL_LuongNV_GUI.Designer.cs">
       <DependentUpon>QL_LuongNV_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_NCC_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_NCC_GUI.Designer.cs">
+      <DependentUpon>QL_NCC_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="QL_NhanVien_GUI.cs">
       <SubType>Form</SubType>
@@ -108,20 +126,23 @@
     <Compile Include="EditNhanVien_GUI.Designer.cs">
       <DependentUpon>EditNhanVien_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="TimKiem_SanPham_GUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TimKiem_SanPham_GUI.Designer.cs">
-      <DependentUpon>TimKiem_SanPham_GUI.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="ChiTietHoaDon_GUI.resx">
       <DependentUpon>ChiTietHoaDon_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditHoaDon_GUI.resx">
+      <DependentUpon>EditHoaDon_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSanPham_GUI.resx">
+      <DependentUpon>EditSanPham_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QL_HoaDon_GUI.resx">
       <DependentUpon>QL_HoaDon_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QL_LuongNV_GUI.resx">
       <DependentUpon>QL_LuongNV_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_NCC_GUI.resx">
+      <DependentUpon>QL_NCC_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QL_NhanVien_GUI.resx">
       <DependentUpon>QL_NhanVien_GUI.cs</DependentUpon>
@@ -150,9 +171,6 @@
     <EmbeddedResource Include="EditNhanVien_GUI.resx">
       <DependentUpon>EditNhanVien_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TimKiem_SanPham_GUI.resx">
-      <DependentUpon>TimKiem_SanPham_GUI.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -164,9 +182,5 @@
     </Compile>
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Content Include="Hinh\tong-hop-icon-mat-cuoi-chat-nhat-28.png" />
-    <Content Include="Hinh\tong-hop-icon-mat-cuoi-chat-nhat-5.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

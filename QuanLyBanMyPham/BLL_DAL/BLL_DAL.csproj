@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="HoaDon_BLL.cs" />
     <Compile Include="NhanVien_BLL.cs" />
     <Compile Include="NhomNguoiDung_BLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -54,6 +54,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLBMP.dbml</DependentUpon>
     </Compile>
+    <Compile Include="SanPham_GUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

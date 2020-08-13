@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace QuanLyBanMyPham
 {
-    public partial class TimKiem_SanPham_GUI : Form
+    public partial class EditHoaDon_GUI : Form
     {
-        public TimKiem_SanPham_GUI()
+        public EditHoaDon_GUI()
         {
             InitializeComponent();
         }

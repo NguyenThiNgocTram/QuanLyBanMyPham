@@ -32,6 +32,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bnEdit = new System.Windows.Forms.Button();
             this.bnIn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -44,15 +45,16 @@
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.RowHeadersWidth = 62;
             this.dgvNhanVien.RowTemplate.Height = 28;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1239, 447);
+            this.dgvNhanVien.Size = new System.Drawing.Size(1254, 468);
             this.dgvNhanVien.TabIndex = 6;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvNhanVien);
-            this.groupBox2.Location = new System.Drawing.Point(13, 12);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1245, 472);
+            this.groupBox2.Size = new System.Drawing.Size(1260, 493);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh Sách Nhân Viên";
@@ -60,7 +62,7 @@
             // bnEdit
             // 
             this.bnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnEdit.Location = new System.Drawing.Point(675, 490);
+            this.bnEdit.Location = new System.Drawing.Point(1008, 499);
             this.bnEdit.Name = "bnEdit";
             this.bnEdit.Size = new System.Drawing.Size(236, 68);
             this.bnEdit.TabIndex = 7;
@@ -71,18 +73,31 @@
             // bnIn
             // 
             this.bnIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnIn.Location = new System.Drawing.Point(982, 490);
+            this.bnIn.Location = new System.Drawing.Point(699, 499);
             this.bnIn.Name = "bnIn";
             this.bnIn.Size = new System.Drawing.Size(242, 68);
             this.bnIn.TabIndex = 8;
             this.bnIn.Text = "In Danh Sách";
             this.bnIn.UseVisualStyleBackColor = true;
+            this.bnIn.Click += new System.EventHandler(this.bnIn_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(395, 499);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(236, 68);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "LOAD";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // QL_NhanVien_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1270, 570);
+            this.ClientSize = new System.Drawing.Size(1260, 579);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.bnIn);
             this.Controls.Add(this.bnEdit);
             this.Controls.Add(this.groupBox2);
@@ -100,5 +115,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button bnEdit;
         private System.Windows.Forms.Button bnIn;
+        private System.Windows.Forms.Button button1;
     }
 }

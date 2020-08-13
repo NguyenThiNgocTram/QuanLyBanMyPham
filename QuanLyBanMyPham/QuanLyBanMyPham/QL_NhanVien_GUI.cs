@@ -27,18 +27,20 @@ namespace QuanLyBanMyPham
             loadNhanVien();
         }
 
-        private void bnThoat_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Đã Thoát");
-
-        }
-
-
         private void bnEdit_Click(object sender, EventArgs e)
         {
-            EditNhanVien_GUI tnv = new EditNhanVien_GUI();
-            tnv.ShowDialog();
+            EditNhanVien_GUI edit = new EditNhanVien_GUI();
+            edit.ShowDialog();
         }
 
+        private void bnIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            loadNhanVien();
+        }
     }
 }
