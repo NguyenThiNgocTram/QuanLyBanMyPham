@@ -36,7 +36,6 @@
             this.cbMaKH = new System.Windows.Forms.ComboBox();
             this.cbMaNV = new System.Windows.Forms.ComboBox();
             this.txtGhiChu = new System.Windows.Forms.TextBox();
-            this.txtNgayLap = new System.Windows.Forms.TextBox();
             this.txtThanhTien = new System.Windows.Forms.TextBox();
             this.txtMaHD = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.datime = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,7 @@
             this.bnXoa.TabIndex = 8;
             this.bnXoa.Text = "Xóa";
             this.bnXoa.UseVisualStyleBackColor = true;
+            this.bnXoa.Click += new System.EventHandler(this.bnXoa_Click);
             // 
             // bnThoat
             // 
@@ -83,13 +84,14 @@
             this.bnThem.TabIndex = 6;
             this.bnThem.Text = "Thêm";
             this.bnThem.UseVisualStyleBackColor = true;
+            this.bnThem.Click += new System.EventHandler(this.bnThem_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.datime);
             this.groupBox1.Controls.Add(this.cbMaKH);
             this.groupBox1.Controls.Add(this.cbMaNV);
             this.groupBox1.Controls.Add(this.txtGhiChu);
-            this.groupBox1.Controls.Add(this.txtNgayLap);
             this.groupBox1.Controls.Add(this.txtThanhTien);
             this.groupBox1.Controls.Add(this.txtMaHD);
             this.groupBox1.Controls.Add(this.label6);
@@ -130,14 +132,6 @@
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(214, 30);
             this.txtGhiChu.TabIndex = 9;
-            // 
-            // txtNgayLap
-            // 
-            this.txtNgayLap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgayLap.Location = new System.Drawing.Point(198, 199);
-            this.txtNgayLap.Name = "txtNgayLap";
-            this.txtNgayLap.Size = new System.Drawing.Size(214, 30);
-            this.txtNgayLap.TabIndex = 8;
             // 
             // txtThanhTien
             // 
@@ -215,6 +209,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Hóa Đơn";
             // 
+            // datime
+            // 
+            this.datime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datime.Location = new System.Drawing.Point(198, 203);
+            this.datime.Name = "datime";
+            this.datime.Size = new System.Drawing.Size(214, 30);
+            this.datime.TabIndex = 12;
+            // 
             // EditHoaDon_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -227,6 +230,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "EditHoaDon_GUI";
             this.Text = "EditHoaDon";
+            this.Load += new System.EventHandler(this.EditHoaDon_GUI_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -243,7 +247,6 @@
         private System.Windows.Forms.ComboBox cbMaKH;
         private System.Windows.Forms.ComboBox cbMaNV;
         private System.Windows.Forms.TextBox txtGhiChu;
-        private System.Windows.Forms.TextBox txtNgayLap;
         private System.Windows.Forms.TextBox txtThanhTien;
         private System.Windows.Forms.TextBox txtMaHD;
         private System.Windows.Forms.Label label6;
@@ -252,5 +255,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker datime;
     }
 }

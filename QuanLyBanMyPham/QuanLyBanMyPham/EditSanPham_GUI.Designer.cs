@@ -32,14 +32,14 @@
             this.bnXoa = new System.Windows.Forms.Button();
             this.bnThem = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.txtMa = new System.Windows.Forms.TextBox();
-            this.txtNgaySinh = new System.Windows.Forms.TextBox();
-            this.txtDC = new System.Windows.Forms.TextBox();
-            this.txtPass = new System.Windows.Forms.TextBox();
-            this.txtSDT = new System.Windows.Forms.TextBox();
-            this.txtTen = new System.Windows.Forms.TextBox();
-            this.cbNhom = new System.Windows.Forms.ComboBox();
+            this.cbNCC = new System.Windows.Forms.ComboBox();
+            this.txtMaSP = new System.Windows.Forms.TextBox();
+            this.txtXuatXu = new System.Windows.Forms.TextBox();
+            this.txtSL = new System.Windows.Forms.TextBox();
+            this.txtGiaNhap = new System.Windows.Forms.TextBox();
+            this.txtGiaBan = new System.Windows.Forms.TextBox();
+            this.txtTenSP = new System.Windows.Forms.TextBox();
+            this.cbLoai = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,6 +48,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSua = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,15 +60,17 @@
             this.bnThoat.TabIndex = 16;
             this.bnThoat.Text = "Thoát";
             this.bnThoat.UseVisualStyleBackColor = true;
+            this.bnThoat.Click += new System.EventHandler(this.bnThoat_Click);
             // 
             // bnXoa
             // 
-            this.bnXoa.Location = new System.Drawing.Point(233, 315);
+            this.bnXoa.Location = new System.Drawing.Point(408, 315);
             this.bnXoa.Name = "bnXoa";
             this.bnXoa.Size = new System.Drawing.Size(121, 39);
             this.bnXoa.TabIndex = 15;
             this.bnXoa.Text = "Xóa";
             this.bnXoa.UseVisualStyleBackColor = true;
+            this.bnXoa.Click += new System.EventHandler(this.bnXoa_Click);
             // 
             // bnThem
             // 
@@ -77,17 +80,18 @@
             this.bnThem.TabIndex = 13;
             this.bnThem.Text = "Thêm";
             this.bnThem.UseVisualStyleBackColor = true;
+            this.bnThem.Click += new System.EventHandler(this.bnThem_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.txtMa);
-            this.groupBox1.Controls.Add(this.txtNgaySinh);
-            this.groupBox1.Controls.Add(this.txtDC);
-            this.groupBox1.Controls.Add(this.txtPass);
-            this.groupBox1.Controls.Add(this.txtSDT);
-            this.groupBox1.Controls.Add(this.txtTen);
-            this.groupBox1.Controls.Add(this.cbNhom);
+            this.groupBox1.Controls.Add(this.cbNCC);
+            this.groupBox1.Controls.Add(this.txtMaSP);
+            this.groupBox1.Controls.Add(this.txtXuatXu);
+            this.groupBox1.Controls.Add(this.txtSL);
+            this.groupBox1.Controls.Add(this.txtGiaNhap);
+            this.groupBox1.Controls.Add(this.txtGiaBan);
+            this.groupBox1.Controls.Add(this.txtTenSP);
+            this.groupBox1.Controls.Add(this.cbLoai);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -103,71 +107,71 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin";
             // 
-            // comboBox1
+            // cbNCC
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(658, 130);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(218, 33);
-            this.comboBox1.TabIndex = 17;
+            this.cbNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbNCC.FormattingEnabled = true;
+            this.cbNCC.Location = new System.Drawing.Point(658, 130);
+            this.cbNCC.Name = "cbNCC";
+            this.cbNCC.Size = new System.Drawing.Size(218, 33);
+            this.cbNCC.TabIndex = 17;
             // 
-            // txtMa
+            // txtMaSP
             // 
-            this.txtMa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMa.Location = new System.Drawing.Point(198, 35);
-            this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(218, 30);
-            this.txtMa.TabIndex = 16;
+            this.txtMaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaSP.Location = new System.Drawing.Point(198, 35);
+            this.txtMaSP.Name = "txtMaSP";
+            this.txtMaSP.Size = new System.Drawing.Size(218, 30);
+            this.txtMaSP.TabIndex = 16;
             // 
-            // txtNgaySinh
+            // txtXuatXu
             // 
-            this.txtNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgaySinh.Location = new System.Drawing.Point(658, 180);
-            this.txtNgaySinh.Name = "txtNgaySinh";
-            this.txtNgaySinh.Size = new System.Drawing.Size(218, 30);
-            this.txtNgaySinh.TabIndex = 14;
+            this.txtXuatXu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtXuatXu.Location = new System.Drawing.Point(658, 180);
+            this.txtXuatXu.Name = "txtXuatXu";
+            this.txtXuatXu.Size = new System.Drawing.Size(218, 30);
+            this.txtXuatXu.TabIndex = 14;
             // 
-            // txtDC
+            // txtSL
             // 
-            this.txtDC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDC.Location = new System.Drawing.Point(658, 34);
-            this.txtDC.Name = "txtDC";
-            this.txtDC.Size = new System.Drawing.Size(218, 30);
-            this.txtDC.TabIndex = 13;
+            this.txtSL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSL.Location = new System.Drawing.Point(658, 34);
+            this.txtSL.Name = "txtSL";
+            this.txtSL.Size = new System.Drawing.Size(218, 30);
+            this.txtSL.TabIndex = 13;
             // 
-            // txtPass
+            // txtGiaNhap
             // 
-            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(198, 180);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(218, 30);
-            this.txtPass.TabIndex = 12;
+            this.txtGiaNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaNhap.Location = new System.Drawing.Point(198, 180);
+            this.txtGiaNhap.Name = "txtGiaNhap";
+            this.txtGiaNhap.Size = new System.Drawing.Size(218, 30);
+            this.txtGiaNhap.TabIndex = 12;
             // 
-            // txtSDT
+            // txtGiaBan
             // 
-            this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.Location = new System.Drawing.Point(198, 130);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(218, 30);
-            this.txtSDT.TabIndex = 11;
+            this.txtGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaBan.Location = new System.Drawing.Point(198, 130);
+            this.txtGiaBan.Name = "txtGiaBan";
+            this.txtGiaBan.Size = new System.Drawing.Size(218, 30);
+            this.txtGiaBan.TabIndex = 11;
             // 
-            // txtTen
+            // txtTenSP
             // 
-            this.txtTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTen.Location = new System.Drawing.Point(198, 83);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(218, 30);
-            this.txtTen.TabIndex = 10;
+            this.txtTenSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenSP.Location = new System.Drawing.Point(198, 83);
+            this.txtTenSP.Name = "txtTenSP";
+            this.txtTenSP.Size = new System.Drawing.Size(218, 30);
+            this.txtTenSP.TabIndex = 10;
             // 
-            // cbNhom
+            // cbLoai
             // 
-            this.cbNhom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbNhom.FormattingEnabled = true;
-            this.cbNhom.Location = new System.Drawing.Point(658, 80);
-            this.cbNhom.Name = "cbNhom";
-            this.cbNhom.Size = new System.Drawing.Size(218, 33);
-            this.cbNhom.TabIndex = 9;
+            this.cbLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbLoai.FormattingEnabled = true;
+            this.cbLoai.Location = new System.Drawing.Point(658, 80);
+            this.cbLoai.Name = "cbLoai";
+            this.cbLoai.Size = new System.Drawing.Size(218, 33);
+            this.cbLoai.TabIndex = 9;
             // 
             // label8
             // 
@@ -250,17 +254,29 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Sản Phẩm";
             // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(228, 315);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(121, 39);
+            this.btnSua.TabIndex = 17;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
             // EditSanPham_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 450);
+            this.Controls.Add(this.btnSua);
             this.Controls.Add(this.bnThoat);
             this.Controls.Add(this.bnXoa);
             this.Controls.Add(this.bnThem);
             this.Controls.Add(this.groupBox1);
             this.Name = "EditSanPham_GUI";
             this.Text = "EditSanPham";
+            this.Load += new System.EventHandler(this.EditSanPham_GUI_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -273,14 +289,14 @@
         private System.Windows.Forms.Button bnXoa;
         private System.Windows.Forms.Button bnThem;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox txtMa;
-        private System.Windows.Forms.TextBox txtNgaySinh;
-        private System.Windows.Forms.TextBox txtDC;
-        private System.Windows.Forms.TextBox txtPass;
-        private System.Windows.Forms.TextBox txtSDT;
-        private System.Windows.Forms.TextBox txtTen;
-        private System.Windows.Forms.ComboBox cbNhom;
+        private System.Windows.Forms.ComboBox cbNCC;
+        private System.Windows.Forms.TextBox txtMaSP;
+        private System.Windows.Forms.TextBox txtXuatXu;
+        private System.Windows.Forms.TextBox txtSL;
+        private System.Windows.Forms.TextBox txtGiaNhap;
+        private System.Windows.Forms.TextBox txtGiaBan;
+        private System.Windows.Forms.TextBox txtTenSP;
+        private System.Windows.Forms.ComboBox cbLoai;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -289,5 +305,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSua;
     }
 }

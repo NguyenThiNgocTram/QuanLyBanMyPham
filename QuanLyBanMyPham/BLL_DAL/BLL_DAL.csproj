@@ -40,7 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietHoaDon_BLL.cs" />
     <Compile Include="HoaDon_BLL.cs" />
+    <Compile Include="KhachHang_BLL.cs" />
+    <Compile Include="LoaiSanPham_BLL.cs" />
+    <Compile Include="NhaCungCap_BLL.cs" />
     <Compile Include="NhanVien_BLL.cs" />
     <Compile Include="NhomNguoiDung_BLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -54,7 +58,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLBMP.dbml</DependentUpon>
     </Compile>
-    <Compile Include="SanPham_GUI.cs" />
+    <Compile Include="SanPham_BLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

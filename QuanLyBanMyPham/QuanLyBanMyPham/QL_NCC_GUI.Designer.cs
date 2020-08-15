@@ -32,16 +32,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtMaNCC = new System.Windows.Forms.TextBox();
+            this.txtTenNCC = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.txtGhiChu = new System.Windows.Forms.TextBox();
+            this.dgvNCC = new System.Windows.Forms.DataGridView();
             this.bnThem = new System.Windows.Forms.Button();
             this.bnSua = new System.Windows.Forms.Button();
             this.bnXoa = new System.Windows.Forms.Button();
             this.bnThoat = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNCC)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,47 +84,48 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Ghi Chú";
             // 
-            // textBox1
+            // txtMaNCC
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(201, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 30);
-            this.textBox1.TabIndex = 4;
+            this.txtMaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNCC.Location = new System.Drawing.Point(201, 21);
+            this.txtMaNCC.Name = "txtMaNCC";
+            this.txtMaNCC.Size = new System.Drawing.Size(212, 30);
+            this.txtMaNCC.TabIndex = 4;
             // 
-            // textBox2
+            // txtTenNCC
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(640, 16);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 30);
-            this.textBox2.TabIndex = 5;
+            this.txtTenNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNCC.Location = new System.Drawing.Point(640, 16);
+            this.txtTenNCC.Name = "txtTenNCC";
+            this.txtTenNCC.Size = new System.Drawing.Size(214, 30);
+            this.txtTenNCC.TabIndex = 5;
             // 
-            // textBox3
+            // txtDiaChi
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(201, 75);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(212, 30);
-            this.textBox3.TabIndex = 6;
+            this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChi.Location = new System.Drawing.Point(201, 75);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(212, 30);
+            this.txtDiaChi.TabIndex = 6;
             // 
-            // textBox4
+            // txtGhiChu
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(640, 70);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(214, 30);
-            this.textBox4.TabIndex = 7;
+            this.txtGhiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGhiChu.Location = new System.Drawing.Point(640, 70);
+            this.txtGhiChu.Name = "txtGhiChu";
+            this.txtGhiChu.Size = new System.Drawing.Size(214, 30);
+            this.txtGhiChu.TabIndex = 7;
             // 
-            // dataGridView1
+            // dgvNCC
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 212);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(830, 231);
-            this.dataGridView1.TabIndex = 8;
+            this.dgvNCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNCC.Location = new System.Drawing.Point(24, 212);
+            this.dgvNCC.Name = "dgvNCC";
+            this.dgvNCC.RowHeadersWidth = 62;
+            this.dgvNCC.RowTemplate.Height = 28;
+            this.dgvNCC.Size = new System.Drawing.Size(830, 231);
+            this.dgvNCC.TabIndex = 8;
+            this.dgvNCC.SelectionChanged += new System.EventHandler(this.dgvNCC_SelectionChanged);
             // 
             // bnThem
             // 
@@ -134,28 +135,31 @@
             this.bnThem.TabIndex = 9;
             this.bnThem.Text = "Thêm";
             this.bnThem.UseVisualStyleBackColor = true;
+            this.bnThem.Click += new System.EventHandler(this.bnThem_Click);
             // 
             // bnSua
             // 
-            this.bnSua.Location = new System.Drawing.Point(253, 130);
+            this.bnSua.Location = new System.Drawing.Point(207, 130);
             this.bnSua.Name = "bnSua";
             this.bnSua.Size = new System.Drawing.Size(125, 57);
             this.bnSua.TabIndex = 10;
             this.bnSua.Text = "Sửa";
             this.bnSua.UseVisualStyleBackColor = true;
+            this.bnSua.Click += new System.EventHandler(this.bnSua_Click);
             // 
             // bnXoa
             // 
-            this.bnXoa.Location = new System.Drawing.Point(499, 130);
+            this.bnXoa.Location = new System.Drawing.Point(386, 130);
             this.bnXoa.Name = "bnXoa";
             this.bnXoa.Size = new System.Drawing.Size(125, 57);
             this.bnXoa.TabIndex = 11;
             this.bnXoa.Text = "Xóa";
             this.bnXoa.UseVisualStyleBackColor = true;
+            this.bnXoa.Click += new System.EventHandler(this.bnXoa_Click);
             // 
             // bnThoat
             // 
-            this.bnThoat.Location = new System.Drawing.Point(729, 130);
+            this.bnThoat.Location = new System.Drawing.Point(549, 130);
             this.bnThoat.Name = "bnThoat";
             this.bnThoat.Size = new System.Drawing.Size(125, 57);
             this.bnThoat.TabIndex = 12;
@@ -172,18 +176,19 @@
             this.Controls.Add(this.bnXoa);
             this.Controls.Add(this.bnSua);
             this.Controls.Add(this.bnThem);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dgvNCC);
+            this.Controls.Add(this.txtGhiChu);
+            this.Controls.Add(this.txtDiaChi);
+            this.Controls.Add(this.txtTenNCC);
+            this.Controls.Add(this.txtMaNCC);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "QL_NCC_GUI";
             this.Text = "QL_NCC_GUI";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.QL_NCC_GUI_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNCC)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,11 +200,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtMaNCC;
+        private System.Windows.Forms.TextBox txtTenNCC;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.TextBox txtGhiChu;
+        private System.Windows.Forms.DataGridView dgvNCC;
         private System.Windows.Forms.Button bnThem;
         private System.Windows.Forms.Button bnSua;
         private System.Windows.Forms.Button bnXoa;

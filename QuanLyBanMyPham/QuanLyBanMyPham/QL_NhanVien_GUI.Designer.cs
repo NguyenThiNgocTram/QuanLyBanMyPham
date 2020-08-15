@@ -47,6 +47,7 @@
             this.dgvNhanVien.RowTemplate.Height = 28;
             this.dgvNhanVien.Size = new System.Drawing.Size(1254, 468);
             this.dgvNhanVien.TabIndex = 6;
+            this.dgvNhanVien.SelectionChanged += new System.EventHandler(this.dgvNhanVien_SelectionChanged);
             // 
             // groupBox2
             // 
@@ -62,7 +63,7 @@
             // bnEdit
             // 
             this.bnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnEdit.Location = new System.Drawing.Point(1008, 499);
+            this.bnEdit.Location = new System.Drawing.Point(679, 496);
             this.bnEdit.Name = "bnEdit";
             this.bnEdit.Size = new System.Drawing.Size(236, 68);
             this.bnEdit.TabIndex = 7;
@@ -73,7 +74,7 @@
             // bnIn
             // 
             this.bnIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnIn.Location = new System.Drawing.Point(699, 499);
+            this.bnIn.Location = new System.Drawing.Point(382, 496);
             this.bnIn.Name = "bnIn";
             this.bnIn.Size = new System.Drawing.Size(242, 68);
             this.bnIn.TabIndex = 8;
@@ -84,7 +85,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(395, 499);
+            this.button1.Location = new System.Drawing.Point(86, 496);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(236, 68);
             this.button1.TabIndex = 9;

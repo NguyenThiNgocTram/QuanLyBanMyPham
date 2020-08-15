@@ -8,7 +8,7 @@ namespace BLL_DAL
     public class NhomNguoiDung_BLL
     {
         QLBMPDataContext qlbmp = new QLBMPDataContext();
-
+       
         public NhomNguoiDung_BLL()
         { }
         
@@ -16,6 +16,5 @@ namespace BLL_DAL
         {
             return (qlbmp.NhomNguoiDungs.Select(k => k));
         }
-
     }
 }

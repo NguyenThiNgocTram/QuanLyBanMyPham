@@ -51,5 +51,15 @@ namespace BLL_DAL
             qlbmp.NhanViens.DeleteOnSubmit(xoaNV);
             qlbmp.SubmitChanges();
         }
+
+        public bool dangNhap(string _manv, string _pass)
+        {
+            int timkiem = qlbmp.NhanViens.Where(k => k.MaNhanVien == _manv && k.MatKhau == _pass).Count();
+            if (timkiem > 0)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

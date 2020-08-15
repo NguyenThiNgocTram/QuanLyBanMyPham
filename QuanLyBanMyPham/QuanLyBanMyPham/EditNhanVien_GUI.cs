@@ -13,6 +13,7 @@ namespace QuanLyBanMyPham
     {
         NhanVien_BLL nv = new NhanVien_BLL();
         NhomNguoiDung_BLL nnd = new NhomNguoiDung_BLL();
+        public string _maNV="";
         public EditNhanVien_GUI()
         {
             InitializeComponent();
@@ -27,7 +28,6 @@ namespace QuanLyBanMyPham
         {
                 nv.ThemNhanVien(txtMa.Text, txtTen.Text, txtSDT.Text, txtPass.Text, txtDC.Text, txtNgaySinh.Value, txtCMND.Text, cbNhom.SelectedValue.ToString());
                 MessageBox.Show("Thêm Thành Công");
-
         }
 
 
@@ -48,6 +48,12 @@ namespace QuanLyBanMyPham
             cbNhom.DataSource = nnd.loadNhomNguoiDung();
             cbNhom.DisplayMember = "TenNhomNguoiDung";
             cbNhom.ValueMember = "MaNhomNguoiDung";
+            txtMa.Text = _maNV;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

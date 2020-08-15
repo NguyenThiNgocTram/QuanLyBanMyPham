@@ -15,7 +15,7 @@ namespace QuanLyBanMyPham
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ManHinhChinh_GUI());
+            Application.Run(new DangNhap_GUI());
         }
     }
 }

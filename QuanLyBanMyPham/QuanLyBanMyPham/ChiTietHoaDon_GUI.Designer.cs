@@ -33,9 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbTenSp = new System.Windows.Forms.ComboBox();
-            this.bnTimKiem = new System.Windows.Forms.Button();
+            this.bnThem = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bnXoa = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.txtSL = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -92,14 +92,14 @@
             this.cbTenSp.Size = new System.Drawing.Size(283, 28);
             this.cbTenSp.TabIndex = 4;
             // 
-            // bnTimKiem
+            // bnThem
             // 
-            this.bnTimKiem.Location = new System.Drawing.Point(462, 346);
-            this.bnTimKiem.Name = "bnTimKiem";
-            this.bnTimKiem.Size = new System.Drawing.Size(148, 40);
-            this.bnTimKiem.TabIndex = 5;
-            this.bnTimKiem.Text = "Tìm Kiếm";
-            this.bnTimKiem.UseVisualStyleBackColor = true;
+            this.bnThem.Location = new System.Drawing.Point(462, 346);
+            this.bnThem.Name = "bnThem";
+            this.bnThem.Size = new System.Drawing.Size(148, 40);
+            this.bnThem.TabIndex = 5;
+            this.bnThem.Text = "Thêm";
+            this.bnThem.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -110,14 +110,14 @@
             this.button1.Text = "In Danh Sách";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // bnXoa
             // 
-            this.button2.Location = new System.Drawing.Point(462, 398);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 40);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Cập Nhật";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bnXoa.Location = new System.Drawing.Point(462, 398);
+            this.bnXoa.Name = "bnXoa";
+            this.bnXoa.Size = new System.Drawing.Size(148, 40);
+            this.bnXoa.TabIndex = 7;
+            this.bnXoa.Text = "Xóa";
+            this.bnXoa.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -179,15 +179,16 @@
             this.Controls.Add(this.txtSL);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.bnXoa);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.bnTimKiem);
+            this.Controls.Add(this.bnThem);
             this.Controls.Add(this.cbTenSp);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "ChiTietHoaDon_GUI";
             this.Text = "ChiTietHoaDon_GUI";
+            this.Load += new System.EventHandler(this.ChiTietHoaDon_GUI_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietHD)).EndInit();
             this.ResumeLayout(false);
@@ -202,9 +203,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbTenSp;
-        private System.Windows.Forms.Button bnTimKiem;
+        private System.Windows.Forms.Button bnThem;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bnXoa;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txtSL;
         private System.Windows.Forms.Label label3;

@@ -14,13 +14,16 @@ namespace QuanLyBanMyPham
     public partial class QL_NhanVien_GUI : Form
     {
         NhanVien_BLL nhanvien = new NhanVien_BLL();
+        public String _maNVien = "";
         public QL_NhanVien_GUI()
         {
             InitializeComponent();
         }
         public void loadNhanVien()
         {
+            
             dgvNhanVien.DataSource = nhanvien.loadNhanVien();
+
         }
         private void ChucNangNhanVien_GUI_Load(object sender, EventArgs e)
         {
@@ -30,6 +33,7 @@ namespace QuanLyBanMyPham
         private void bnEdit_Click(object sender, EventArgs e)
         {
             EditNhanVien_GUI edit = new EditNhanVien_GUI();
+            edit._maNV = _maNVien;
             edit.ShowDialog();
         }
 
@@ -42,5 +46,12 @@ namespace QuanLyBanMyPham
         {
             loadNhanVien();
         }
+
+        private void dgvNhanVien_SelectionChanged(object sender, EventArgs e)
+        {
+            _maNVien = dgvNhanVien.CurrentRow.Cells[0].Value.ToString();
+        }
+
+
     }
 }

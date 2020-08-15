@@ -13,14 +13,12 @@
   <Table Name="dbo.ThongTinKhachHang" Member="ThongTinKhachHangs">
     <Type Name="ThongTinKhachHang">
       <Column Name="MaKhachHang" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MaTheThanhVien" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
       <Column Name="TenKhachHang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="DiaChi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="SoDienThoai" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="TichDiem" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="MaNhomNguoiDung" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
       <Association Name="ThongTinKhachHang_HoaDon" Member="HoaDons" ThisKey="MaKhachHang" OtherKey="MaKhachHang" Type="HoaDon" />
-      <Association Name="TheThanhVien_ThongTinKhachHang" Member="TheThanhVien" ThisKey="MaTheThanhVien" OtherKey="MaTheThanhVien" Type="TheThanhVien" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ChiTietPhieuNhap" Member="ChiTietPhieuNhaps">
@@ -84,7 +82,7 @@
       <Column Name="DiaChi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="NgaySinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="CMND" Type="System.String" DbType="Char(10)" CanBeNull="true" />
-      <Column Name="MaNhomNguoiDung" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="MaNhomNguoiDung" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
       <Association Name="NhanVien_HoaDon" Member="HoaDons" ThisKey="MaNhanVien" OtherKey="MaNhanVien" Type="HoaDon" />
       <Association Name="NhanVien_Luong" Member="Luongs" ThisKey="MaNhanVien" OtherKey="MaNV" Type="Luong" />
       <Association Name="NhanVien_PhieuNhap" Member="PhieuNhaps" ThisKey="MaNhanVien" OtherKey="MaNhanVien" Type="PhieuNhap" />
@@ -125,15 +123,6 @@
       <Association Name="SanPham_ChiTietPhieuNhap" Member="ChiTietPhieuNhaps" ThisKey="MaSanPham" OtherKey="MaSanPham" Type="ChiTietPhieuNhap" />
       <Association Name="LoaiSanPham_SanPham" Member="LoaiSanPham" ThisKey="MaLoaiSanPham" OtherKey="MaLoaiSanPham" Type="LoaiSanPham" IsForeignKey="true" />
       <Association Name="NhaCungCap_SanPham" Member="NhaCungCap" ThisKey="MaNCC" OtherKey="MaNCC" Type="NhaCungCap" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.TheThanhVien" Member="TheThanhViens">
-    <Type Name="TheThanhVien">
-      <Column Name="MaTheThanhVien" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MatKhau" Type="System.String" DbType="Char(50)" CanBeNull="true" />
-      <Column Name="TichDiem" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="NgayLapThe" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="TheThanhVien_ThongTinKhachHang" Member="ThongTinKhachHangs" ThisKey="MaTheThanhVien" OtherKey="MaTheThanhVien" Type="ThongTinKhachHang" />
     </Type>
   </Table>
 </Database>
